@@ -13,6 +13,6 @@
   - name: Creating user deploybot
     user:
         name: deploybot
-        group: docker
-        password: dey3Env.83TaM
+        groups: docker
+        password: $1$SomeSalt$63BHt.SzjJzifLqjj0GRN0
 
