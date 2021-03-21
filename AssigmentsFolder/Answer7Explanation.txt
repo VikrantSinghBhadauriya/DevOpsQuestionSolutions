@@ -1,0 +1,5 @@
+In QUestion 7:
+The tool used to install adn setup docker on ec2 instance is Ansible.The user is created using asnible playbook. The password of the user is encrypted using the python following python command:  
+    python -c 'import crypt; print(crypt.crypt("Password", "$1$SomeSalt$"))'
+
+The playbook file is present in currect directory. 
