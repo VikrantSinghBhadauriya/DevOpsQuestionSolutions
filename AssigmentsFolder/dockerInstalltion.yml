@@ -1,0 +1,18 @@
+- name: Configuring Webserver using Docker
+  hosts: all
+  tasks:
+  - name: Installing Docker package
+    package:
+      name: "docker"
+      state: present
+
+  - name: Starting docker service
+    service:
+      name: "docker"
+      state: started
+  - name: Creating user deploybot
+    user:
+        name: deploybot
+        group: docker
+        password: dey3Env.83TaM
+

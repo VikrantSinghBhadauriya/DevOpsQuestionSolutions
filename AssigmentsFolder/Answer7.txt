@@ -1,0 +1,21 @@
+Steps to Ensure AWS account and services are running securely:
+
+Multi-factor Authentication
+Enable multi-factor authenticsation for your root account.
+
+
+IAM
+Create Use AWS IAM to create user,groups and roles and create plocies to provide necessary access of AWS services to the users.
+
+CloudTrail:
+ALl activities of AWS account can be tracked using cloudTail which can be used to monitor resources and activities.
+
+For application securities:
+
+Configure critical applications like Database etc on private subnet.
+Configure firewall, routing tables,NACL for the required targets only.
+Use cloudWatch to monitor applications.
+We can use Amazon ACM to configure CRT certificates for secure transactions.
+
+
+ 
